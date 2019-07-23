@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+<button class="section">section1</button>
+<div class="panel"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum veniam ab in consequuntur sunt! Necessitatibus totam iusto aut, dignissimos sequi voluptate, minima ad obcaecati harum corrupti est assumenda nihil omnis natus eaque et ullam hic minus consequatur rem a placeat eligendi vel. At, commodi facilis sunt nisi neque voluptatum ipsum.</p>
+</div>
+
+
+<button class="section">section2</button>
+<div class="panel"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum veniam ab in consequuntur sunt! Necessitatibus totam iusto aut, dignissimos sequi voluptate, minima ad obcaecati harum corrupti est assumenda nihil omnis natus eaque et ullam hic minus consequatur rem a placeat eligendi vel. At, commodi facilis sunt nisi neque voluptatum ipsum.</p>
+</div>
+
+<button class="section">section3</button>
+<div class="panel"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum veniam ab in consequuntur sunt! Necessitatibus totam iusto aut, dignissimos sequi voluptate, minima ad obcaecati harum corrupti est assumenda nihil omnis natus eaque et ullam hic minus consequatur rem a placeat eligendi vel. At, commodi facilis sunt nisi neque voluptatum ipsum.</p>
+</div>
+
+<script>
+var a=document.getElementsByClassName("section");
+for(i=0; i <a.length;i++)
+{
+    a[i].addEventListener("click",function(){
+        this.classList.toggle('active');
+        var pnl=this.nextElementSibling;
+        if(pnl.style.display=='block')
+        {
+            pnl.style.display='none';
+        }
+        else{
+            pnl.style.display="block";
+        }
+
+    });
+}
+</script>
+
+     
+</body>
+</html>

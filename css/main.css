@@ -1,0 +1,16 @@
+.section{
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+}
+.panel{
+    padding: 2px;
+    color: #d3d3d3d3;
+    display: none;
+    overflow: hidden;
+
+}
+.active.panel{
+    overflow:auto;
+    
+}
